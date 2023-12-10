@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 import { BiCart } from "react-icons/bi";
 
@@ -15,12 +15,10 @@ const ProductCard = () => {
           New
         </span>
         <span className=" text-[0.8125rem] text-[#aaaaaa] inline-block my-[7px]">Accessories</span>
-        <p className=" text-sm text-[#555555]">Teclado Inalambrico Bluetooth Con Air Mouse</p>
-        <p className=" text-[12px] text-[#f73232] mt-[5px] mb-[10px]">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>{" "}
+        <Link className=" text-sm text-[#555555] cursor-pointer inline-block" to="phone">
+          Teclado Inalambrico Bluetooth Con Air Mouse
+        </Link>
+        <p className=" text-[12px] text-[#f73232] flex mt-[5px] mb-[10px]">
           <span class="margin-left-10">5 Review(s)</span>
         </p>
         <div className=" flex justify-between items-center">
