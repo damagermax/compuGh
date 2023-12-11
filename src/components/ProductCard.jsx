@@ -11,12 +11,12 @@ const ProductCard = () => {
           src="https://jthemes.net/themes/f-html/smarttech/html/images/item-img-1-1.jpg"
           alt=""
         />
-        <span className=" bg-[#0088cc] rounded-sm text-[0.8125rem] text-white font-normal absolute top-[9px] px-[10px] py-[5px] left-[9px]">
+        <span className=" bg-[#0088cc]/10 rounded-sm text-[12px] text-[#0088cc] font-normal absolute top-[9px] px-[10px] py-[5px] left-[9px]">
           New
         </span>
         <span className=" text-[0.8125rem] text-[#aaaaaa] inline-block my-[7px]">Accessories</span>
-        <Link className=" text-sm text-[#555555] cursor-pointer inline-block" to="phone">
-          Teclado Inalambrico Bluetooth Con Air Mouse
+        <Link className=" text-sm text-[#555555] cursor-pointer inline-block " to="/phone">
+          <p className=" line-clamp-2">Teclado Inalambrico Bluetooth Con Air Mouse</p>
         </Link>
         <p className=" text-[12px] text-[#f73232] flex mt-[5px] mb-[10px]">
           <span class="margin-left-10">5 Review(s)</span>
@@ -42,7 +42,7 @@ const ProductCard2 = () => {
           src="https://jthemes.net/themes/f-html/smarttech/html/images/item-img-1-1.jpg"
           alt=""
         />
-        <span className=" bg-[#0088cc] rounded-sm text-[0.8125rem] text-white font-normal absolute top-[9px] px-[10px] py-[5px] left-[9px]">
+        <span className=" bg-[#0088cc]/10 rounded-sm text-[12px] text-[#0088cc] font-normal absolute top-[9px] px-[10px] py-[5px] left-[9px]">
           New
         </span>
         <p className=" text-sm text-[#555555] my-[7px]">

@@ -2,8 +2,8 @@ import React from "react";
 
 const NewsLetters = () => {
   return (
-    <section className=" bg-[#0088cc] py-[40px]  relative overflow-hidden">
-      <div className="  w-[1170px] px-[15px] mx-auto ">
+    <section className=" bg-[#0088cc] py-[30px] md:py-[40px]  relative overflow-hidden">
+      <div className="  max-w-[1170px] px-[15px] mx-auto ">
         <div className=" absolute top-[50%] ">
           <img
             className="w-fit h-[100px] "
@@ -12,7 +12,7 @@ const NewsLetters = () => {
           />
         </div>
 
-        <div className=" grid grid-cols-2 gap-8 items-center ">
+        <div className=" grid  md:grid-cols-2 gap-8 items-center ">
           <div>
             <h3 className=" text-[26px] text-white">Get Special Offers and Savings </h3>
             <p className=" text-[14px] text-[#f5f5f5]/80">

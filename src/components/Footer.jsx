@@ -5,9 +5,9 @@ import { GiReceiveMoney } from "react-icons/gi";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-800 py-[40px] ">
-      <div className="  w-[1170px] px-[15px] mx-auto  text-xs  text-slate-400">
-        <div className="grid grid-cols-3 gap-8 mb-[80px]">
+    <footer className="bg-slate-800 py-[30px] md:py-[40px] ">
+      <div className="  max-w-[1170px] px-[15px] mx-auto  text-xs  text-slate-400">
+        <div className="grid md:grid-cols-3 gap-8 mb-[80px]">
           <div>
             <img
               className=" w-[70%]"
@@ -36,8 +36,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className=" col-span-2 grid grid-cols-3 gap-8">
-            <div className=" px-8">
+          <div className=" col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div className=" lg:px-8">
               <span className=" text-sm font-medium text-white">USEFUL LINKS</span>
               <ul className="pt-6 grid gap-4">
                 <li>
@@ -55,7 +55,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="px-8">
+            <div className="lg:px-8">
               <span className=" text-sm  font-medium text-white">ACCOUNT</span>
               <ul className="pt-6 grid gap-4">
                 <li>
@@ -73,7 +73,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className=" px-8">
+            <div className=" lg:px-8">
               <span className="  text-sm font-medium text-white">PAYMENT METHODS</span>
               <ul className="pt-6 grid  grid-cols-3   text-2xl">
                 <li>

@@ -1,6 +1,8 @@
 import Footer from "../components/Footer";
 import NewsLetters from "../components/NewsLetters";
-import { ProductCard2 } from "../components/ProductCard";
+
+import YouMayAlsoLike from "../components/YouMayAlsoLike";
+import RecentlyViewed from "../components/RecentlyViewed";
 
 import { IoMdHeart, IoMdShare } from "react-icons/io";
 import { TbTruckDelivery } from "react-icons/tb";
@@ -9,11 +11,11 @@ import { GiReturnArrow } from "react-icons/gi";
 const ProductDetails = () => {
   return (
     <>
-      <section className=" py-[60px]">
-        <div className="  w-[1170px] px-[15px] mx-auto flex ">
-          <div className=" w-[75%]">
-            <div className=" flex">
-              <div className=" w-[36%] px-[15px]">
+      <section className="pb-[20px] md:py-[20px] lg:py-[40px]">
+        <div className="  max-w-[1170px] px-[15px] mx-auto lg:flex ">
+          <div className="w-full lg:w-[75%]">
+            <div className=" md:flex">
+              <div className=" md:w-[36%] md:px-[15px]">
                 <div>
                   <img
                     src="https://jthemes.net/themes/f-html/smarttech/html/images/item-img-1-2.jpg"
@@ -37,7 +39,7 @@ const ProductDetails = () => {
                   />
                 </div>
               </div>
-              <div className=" w-[54%] px-[15px]">
+              <div className=" md:w-[64%] lg:w-[54%] md:pl-[15px] lg:px-[15px] mt-6 md:mt-0">
                 <span className=" text-[0.8125rem] text-[#aaaaaa] inline-block">Accessories</span>
 
                 <h5 className="mt-[5px] mb-[10px] text-[20px] line-clamp-2">
@@ -76,7 +78,7 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className=" w-[25%] pl-[15px] flex flex-col gap-4  text-sm">
+          <div className="w-full lg:w-[25%] lg:pl-[15px] mt-10 lg:mt-0 flex flex-col gap-4  text-sm">
             <div className=" bg-[#f3f6fb] p-[15px] flex gap-2 rounded-lg h-fit ">
               <div>
                 <TbTruckDelivery size={20} />
@@ -104,48 +106,8 @@ const ProductDetails = () => {
         </div>
       </section>
 
-      <section className=" py-[60px] ">
-        <div className="  w-[1170px] px-[15px] mx-auto ">
-          <div className="mb-[40px]">
-            <h2 className=" text-[20px] mb-[20px] text-[#222222] font-semibold">
-              You May Also Like
-            </h2>
-            <div className=" flex items-center">
-              <hr className=" bg-[#0088cc] inline-block h-[2px] w-[90px]" />
-              <hr className=" w-full" />
-            </div>
-          </div>
-          <div className=" grid grid-cols-5  gap-6">
-            <ProductCard2 />
-            <ProductCard2 />
-            <ProductCard2 />
-            <ProductCard2 />
-            <ProductCard2 />
-          </div>
-        </div>
-      </section>
-
-      <section className=" py-[60px] ">
-        <div className="  w-[1170px] px-[15px] mx-auto ">
-          <div className="mb-[40px]">
-            <h2 className=" text-[20px] mb-[20px] text-[#222222] font-semibold">Recently Viewed</h2>
-            <div className=" flex items-center">
-              <hr className=" bg-[#0088cc] inline-block h-[2px] w-[90px]" />
-              <hr className=" w-full" />
-            </div>
-          </div>
-          <div className=" grid grid-cols-5  gap-6">
-            <ProductCard2 />
-            <ProductCard2 />
-            <ProductCard2 />
-            <ProductCard2 />
-            <ProductCard2 />
-          </div>
-        </div>
-      </section>
-
-      <NewsLetters />
-      <Footer />
+      <YouMayAlsoLike />
+      <RecentlyViewed />
     </>
   );
 };
