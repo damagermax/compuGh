@@ -1,14 +1,12 @@
-import { Outlet } from "react-router-dom";
-
 import { Suspense } from "react";
-
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 
 import NewsLetters from "../components/home/NewsLetters";
+import CartDrawer from "../components/shared/drawer/CartDrawer";
 
 const RootLayout = () => {
   const { pathname } = useLocation();

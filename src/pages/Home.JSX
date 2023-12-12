@@ -1,7 +1,8 @@
-import { ProductCard } from "../components//shared/ProductCard";
 import TopSellingOfTheMonth from "../components/home/TopSelingOfTheMonth";
 import BrandSlider from "../components/home/BrandSlider";
 import Billboard from "../components/home/Billboard";
+import FeaturedProducts from "../components/home/FeaturedProducts";
+
 import ProductList from "../components/ProductList";
 
 import { Link } from "react-router-dom";
@@ -10,20 +11,9 @@ const Home = () => {
   return (
     <>
       <Billboard />
-
       <hr className="h-[6px] sm:hidden bg-gray-300 w-full" />
-      <section className="py-[40px] md:py-[50px] lg:py-[60px]">
-        <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-w-[1170px] px-[15px] mx-auto gap-2 md:gap-4 lg:gap-6">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-        </div>
-      </section>
-
+      <FeaturedProducts />
       <TopSellingOfTheMonth />
-
       <section className="py-[30px] md:py-[50px] lg:py-[60px]">
         <div className="  max-w-[1170px] px-[15px] mx-auto ">
           <ProductList />
@@ -38,7 +28,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <BrandSlider />
     </>
   );

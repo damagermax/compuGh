@@ -4,6 +4,9 @@ import { LuHeart } from "react-icons/lu";
 
 import { Link } from "react-router-dom";
 
+import { useState } from "react";
+import CartDrawer from "./drawer/CartDrawer";
+
 const Navbar = () => {
   return (
     <nav>
@@ -36,10 +39,7 @@ const Navbar = () => {
             <p className=" hidden lg:block font-medium">Wishlist</p>
           </li>
 
-          <li className=" flex gap-2 items-center cursor-pointer">
-            <FiShoppingBag size={20} />
-            <p className="hidden lg:block font-medium">Cart</p>
-          </li>
+          <CartDrawer />
         </ul>
       </div>
     </nav>

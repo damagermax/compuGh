@@ -1,5 +1,4 @@
 import { lazy } from "react";
-// const ReportedPost = lazy(() => import("./pages/ReportedPost"));
 
 const Home = lazy(() => import("./pages/Home.jsx"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails.jsx"));
