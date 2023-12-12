@@ -1,8 +1,8 @@
-import { ProductCard } from "../components/ProductCard";
-import TopSellingOfTheMonth from "../components/TopSelingOfTheMonth";
+import { ProductCard } from "../components//shared/ProductCard";
+import TopSellingOfTheMonth from "../components/home/TopSelingOfTheMonth";
+import BrandSlider from "../components/home/BrandSlider";
+import Billboard from "../components/home/Billboard";
 import ProductList from "../components/ProductList";
-import BrandSlider from "../components/BrandSlider";
-import Billboard from "../components/Billboard";
 
 import { Link } from "react-router-dom";
 

@@ -2,28 +2,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./layout/RootLayout.jsx";
 
-import Home from "./pages/Home.jsx";
-import ProductDetails from "./pages/ProductDetails.jsx";
-import Products from "./pages/Products.jsx";
+import { publicRoutes } from "./routes.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
-    children: [
-      {
-        path: "",
-        element: <Home />,
-      },
-      {
-        path: "/phone",
-        element: <ProductDetails />,
-      },
-      {
-        path: "/products",
-        element: <Products />,
-      },
-    ],
+    children: publicRoutes,
   },
 ]);
 

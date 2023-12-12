@@ -1,7 +1,7 @@
 import { TbMathGreater } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
-import { ProductCard } from "./ProductCard";
+import { ProductCard } from "../shared/ProductCard";
 
 const TopSellingOfTheMonth = () => {
   return (

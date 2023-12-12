@@ -3,6 +3,24 @@ import { MdOutlineMail, MdOutlinePhone } from "react-icons/md";
 import { FaCcMastercard, FaCcVisa } from "react-icons/fa";
 import { GiReceiveMoney } from "react-icons/gi";
 
+const FOOTER_LINKS = {
+  textLinks: [
+    {
+      name: "USEFUL LINKS",
+      links: ["About Us", "Returns Policy", "Terms & Condition", "Delivery Information"],
+    },
+    {
+      name: "ACCOUNT",
+      links: ["Cart", "Login ", "Order history", "Create Account"],
+    },
+  ],
+
+  iconLink: {
+    name: "PAYMENT METHODS",
+    icons: [<GiReceiveMoney />, <FaCcVisa />, <FaCcMastercard />],
+  },
+};
+
 const Footer = () => {
   return (
     <footer className="bg-slate-800 py-[30px] md:py-[40px] ">
@@ -37,54 +55,25 @@ const Footer = () => {
           </div>
 
           <div className=" col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div className=" lg:px-8">
-              <span className=" text-sm font-medium text-white">USEFUL LINKS</span>
-              <ul className="pt-6 grid gap-4">
-                <li>
-                  <a href="">About Us</a>
-                </li>
-                <li>
-                  <a href="">Returns Policy</a>
-                </li>
-                <li>
-                  <a href="">Terms & Condition</a>
-                </li>
-                <li>
-                  <a href="">Delivery Information</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="lg:px-8">
-              <span className=" text-sm  font-medium text-white">ACCOUNT</span>
-              <ul className="pt-6 grid gap-4">
-                <li>
-                  <a href=""> Cart</a>
-                </li>
-                <li>
-                  <a href="">Login </a>
-                </li>
-                <li>
-                  <a href="">Order history</a>
-                </li>
-                <li>
-                  <a href="">Create Account</a>
-                </li>
-              </ul>
-            </div>
+            {FOOTER_LINKS.textLinks.map((link, key) => (
+              <div className=" lg:px-8" key={key}>
+                <span className=" text-sm font-medium text-white">{link.name}</span>
+                <ul className="pt-6 grid gap-4">
+                  {link.links.map((link, key) => (
+                    <li key={key}>
+                      <a href="">{link}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
 
             <div className=" lg:px-8">
-              <span className="  text-sm font-medium text-white">PAYMENT METHODS</span>
+              <span className="  text-sm font-medium text-white">{FOOTER_LINKS.iconLink.name}</span>
               <ul className="pt-6 grid  grid-cols-3   text-2xl">
-                <li>
-                  <GiReceiveMoney />
-                </li>
-                <li>
-                  <FaCcVisa />
-                </li>
-                <li>
-                  <FaCcMastercard />
-                </li>
+                {FOOTER_LINKS.iconLink.icons.map((link, key) => (
+                  <li key={key}>{link}</li>
+                ))}
               </ul>
             </div>
           </div>

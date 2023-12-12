@@ -1,9 +1,7 @@
-import { ProductCard } from "../components/ProductCard";
-import Footer from "../components/Footer";
-import NewsLetters from "../components/NewsLetters";
+import { ProductCard } from "../components/shared/ProductCard";
 
 import { TfiMenuAlt, TfiLayoutGrid3Alt } from "react-icons/tfi";
-import Filter from "../components/Filter";
+import Filter from "../components/allProducts/Filter";
 
 const Products = () => {
   return (

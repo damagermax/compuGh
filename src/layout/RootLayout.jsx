@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom";
 
+import { Suspense } from "react";
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import Navbar from "../components/Navbar";
-import NewsLetters from "../components/NewsLetters";
-import Footer from "../components/Footer";
+import Navbar from "../components/shared/Navbar";
+import Footer from "../components/shared/Footer";
+
+import NewsLetters from "../components/home/NewsLetters";
 
 const RootLayout = () => {
   const { pathname } = useLocation();
@@ -17,7 +20,9 @@ const RootLayout = () => {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <Suspense fallback={<div>Loading</div>}>
+        <Outlet />
+      </Suspense>
       <NewsLetters />
       <Footer />
     </>
