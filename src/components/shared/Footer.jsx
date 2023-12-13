@@ -32,6 +32,7 @@ const Footer = () => {
               src="https://compughana.com/media/logo/stores/2/CG_Logo_w.png"
               alt=""
             />
+
             <p className="my-[20px]  text-xs">
               Compu-Ghana is Ghana's premier retail outlet for I.T. products, services and
               accessories along-with audio-visual equipment and home appliances,{" "}

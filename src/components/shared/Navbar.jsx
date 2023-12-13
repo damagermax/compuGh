@@ -1,11 +1,10 @@
 import { FiSearch, FiShoppingBag } from "react-icons/fi";
 import { BsPerson } from "react-icons/bs";
-import { LuHeart } from "react-icons/lu";
 
 import { Link } from "react-router-dom";
 
-import { useState } from "react";
-import CartDrawer from "./drawer/CartDrawer";
+import CartDrawer from "./cartDrawer/CartDrawer";
+import WishlistDrawer from "./wishlistDrawer/WishlistDrawer";
 
 const Navbar = () => {
   return (
@@ -20,7 +19,7 @@ const Navbar = () => {
             <input
               className="py-3  px-6  w-full h-[40px] border rounded-[4px] focus:outline-none"
               type="text"
-              placeholder="Enter your email address here..."
+              placeholder="Search for products,brands and categories..."
             />
             <button className="  px-3 rounded-r-[4px] bg-[#eeeeee] text-gray-600   font-semibold  h-[40px] cursor-pointer absolute top-0 right-0">
               <FiSearch size={20} />
@@ -33,12 +32,7 @@ const Navbar = () => {
             <BsPerson size={22} />
             <p className="hidden lg:block font-medium">Account</p>
           </li>
-
-          <li className=" flex gap-2 items-center cursor-pointer">
-            <LuHeart size={20} />
-            <p className=" hidden lg:block font-medium">Wishlist</p>
-          </li>
-
+          <WishlistDrawer />
           <CartDrawer />
         </ul>
       </div>

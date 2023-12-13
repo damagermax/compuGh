@@ -6,7 +6,6 @@ import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 
 import NewsLetters from "../components/home/NewsLetters";
-import CartDrawer from "../components/shared/drawer/CartDrawer";
 
 const RootLayout = () => {
   const { pathname } = useLocation();
@@ -18,7 +17,7 @@ const RootLayout = () => {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<div>Loading</div>}>
+      <Suspense fallback={<div className=" w-screen h-screen">Loading</div>}>
         <Outlet />
       </Suspense>
       <NewsLetters />
